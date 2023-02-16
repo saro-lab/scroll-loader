@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES6",
     "declaration": true,
     "importHelpers": false,
     "outDir": "dist",
