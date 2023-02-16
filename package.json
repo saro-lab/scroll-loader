@@ -1,29 +1,27 @@
 {
   "name": "scroll-loader",
-  "version": "1.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A library that automatically calls loading when scrolling down",
-  "keywords": ["scroll", "typescript"],
+  "keywords": [
+    "scroll",
+    "typescript"
+  ],
   "homepage": "https://github.com/saro-lab/scroll-loader",
-
   "author": {
     "name": "PARK Yong Seo",
     "email": "j@saro.me",
     "url": "https://gs.saro.me"
   },
-
-  "bugs":  {
+  "bugs": {
     "url": "https://github.com/saro-lab/scroll-loader/issues",
     "email": "j@saro.me"
   },
-
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-
   "scripts": {
     "build": "tsc"
   },
-
   "dependencies": {},
   "devDependencies": {
     "typescript": "^4.9.4"
