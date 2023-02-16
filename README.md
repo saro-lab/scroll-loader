@@ -3,10 +3,30 @@
 
 ## Support
 - typescript
-- npm, yarn, cdn
+- npm, yarn
 - ES6
 
 ## Package
 ```
-"scroll-loader": "^1.0.1"
+"scroll-loader": "^1.0.2"
+```
+
+## Example
+```
+import scrollLoader from "scroll-Loader";
+const sl = scrollLoader();
+
+function loadPage() {
+    fetch(`~~`).then(data => {
+        ... code ...
+        if (data.moreData) {
+            sl.next();
+        }
+    });
+}
+
+sl.callback(() => {
+  // more page load
+  loadPage();
+});
 ```

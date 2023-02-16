@@ -6,7 +6,7 @@
 2. copy type file
     windows
     ``` shell
-    copy /Y /A dist\index.d.ts .
+    copy /Y /B dist\index.d.ts .
     ```
 3. publish
    ``` shell

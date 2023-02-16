@@ -1,2 +1,2 @@
-import scrollLoader from "./index"
+import scrollLoader from "./index.js"
 window['$scrollLoader'] = scrollLoader;
