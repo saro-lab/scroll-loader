@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES5",
+    "allowJs": true,
     "declaration": true,
-    "importHelpers": false,
+    "strict": true,
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": "src"
   },
   "include": ["src/**/*"]
 }

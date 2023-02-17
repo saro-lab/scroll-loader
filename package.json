@@ -18,7 +18,8 @@
     "email": "j@saro.me"
   },
   "main": "dist/index.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
+  "files": ["dist/index.d.ts"],
   "scripts": {
     "build": "tsc"
   },
