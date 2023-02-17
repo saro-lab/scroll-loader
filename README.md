@@ -1,11 +1,11 @@
 # Scroll-Loader
 - A library that automatically calls loading when scrolling down
-- compatible with typescript, vuejs, reactjs, svelte, etc.
-- must use es6 or higher javascript.
+- Compatible with JavaScript, TypeScript, vue.js, React, Svelte...
+- Must use ES6 or higher
 
 ## Package
 ```
-"scroll-loader": "^1.0.4"
+"scroll-loader": "^1.0.5"
 ```
 
 ## Options
@@ -13,24 +13,32 @@
 |-----------|-----------------|--------------------------|
 | target    | watching target | document.documentElement |
 | sparePage | spare page      | 0.8                      |
+![areas.png](https://raw.githubusercontent.com/saro-lab/scroll-loader/master/document/areas.png)
 
 #### sparePage
-- ex) scroll areas height 1000px
+- ex) scroll area height 1000px
   - sparePage: 0.2 = spare size is 200px
   - sparePage: 0.8 = spare size is 800px
   - sparePage: 1 = spare size is 1000px
 
 ## Methods
-| name           | desc                                         |
-|----------------|----------------------------------------------|
-| watch          | watching and call (just once call and pause) |
-| onNeedNextPage | register watching callback                   |
-| destroy        | destroy event and deactivate the instance    |
+### watch(onWatch: boolean = true): void
+- start watching scroll
+- scroll event detection -> pause watching and call scrollCallback(...)
+
+### onNeedNextPage(scrollCallback: (ScrollLoader) => void): ScrollLoader
+- register watching callback
+
+### destroy(): void
+- destroy event and deactivate the instance
+
+
+![flow.png](https://raw.githubusercontent.com/saro-lab/scroll-loader/master/document/flow.png)
 
 ## Example
 ``` js
 // import
-import scrollLoader from "scroll-Loader";
+import scrollLoader from "scroll-loader";
 
 // create instance
 const sl = scrollLoader({

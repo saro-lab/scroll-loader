@@ -47,8 +47,8 @@ class ScrollLoader {
     return ((this._sparePage + 1) * pageHeight + scrollTop) >= scrollHeight;
   }
 
-  public watch(isNext: boolean = true) {
-    if ((this._on = isNext)) {
+  public watch(onWatch: boolean = true) {
+    if ((this._on = onWatch)) {
       this._event(null);
     }
   }
