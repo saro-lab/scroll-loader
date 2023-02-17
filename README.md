@@ -5,7 +5,7 @@
 
 ## Package
 ```
-"scroll-loader": "^1.0.3"
+"scroll-loader": "^1.0.4"
 ```
 
 ## Options
