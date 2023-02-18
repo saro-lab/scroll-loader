@@ -1,9 +1,12 @@
 # Scroll-Loader
 - A library that automatically calls loading when scrolling down
-- Compatible with JavaScript, TypeScript, vue.js, React, Svelte...
+- Compatible with JavaScript, TypeScript, Vue.js, React, Svelte...
 - Must use ES6 or higher
 
 ## Package
+
+- https://www.npmjs.com/package/scroll-loader
+
 ```
 "scroll-loader": "^1.0.5"
 ```
@@ -13,6 +16,8 @@
 |-----------|-----------------|--------------------------|
 | target    | watching target | document.documentElement |
 | sparePage | spare page      | 0.8                      |
+
+
 ![areas.png](https://raw.githubusercontent.com/saro-lab/scroll-loader/master/document/areas.png)
 
 #### sparePage
